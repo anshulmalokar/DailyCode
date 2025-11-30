@@ -12,8 +12,7 @@ interface User{
     isAdmin: boolean
 }
 
-// This will ensure that any property that's been added to the cache will be having a property
-// of id
+// This will ensure that any property that's been added to the cache will be having a property of id
 class DataCache<T extends {id: any}>{
     private cache: T[] = [];
     private name: string = '';
